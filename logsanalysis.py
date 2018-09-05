@@ -87,7 +87,7 @@ def get_popular_articles():
 
 
 if __name__ == "__main__":
-print('Results')
+print('Results-\n')
 get_popular_articles()
 get_popular_authors()
 get_days_with_errors()
