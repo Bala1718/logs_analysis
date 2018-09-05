@@ -3,7 +3,7 @@ import time
 def connect():
 	return psycopg2.connect("dbname=news")
 
-	query 1 = """
+	query1 = """
 
 	    SELECT articles.title, COUNT(*) As num
 	    FROM ARTICLES
