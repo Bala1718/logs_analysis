@@ -29,15 +29,10 @@ def connect():
             
           """
 
-    query3 = """
+    query3 = 
 
        "SELECT to_char(date,'Mon DD,YYYY') as date,err_prc from err_perc where err_prc>1.0"
-
-      """
     
-
-	
-
 
 def get_popular_articles():
 
