@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import psycopg2
 import time
 def connect():
@@ -8,7 +9,7 @@ def connect():
 	    SELECT articles.title, COUNT(*) As num
 	    FROM ARTICLES
 	    Join log
-	    ON log.path LIKE concat('/articles/%',articles.slug)
+	    ON log.path LIKE concat('/article/%',articles.slug)
 	    GROUP BY articles.title
 	    ORDER BY num DESC
 	    LIMIT 3
